@@ -1,0 +1,77 @@
+调试日志: [在IPAddress类构造函数中] 成功创建IPv4地址[127.0.0.1: 39999]
+向tinyrpc服务器[127.0.0.1: 39999]发送请求对象: 
+调试日志: [在TcpClient类构造函数中] 创建文件描述符: 3
+调试日志: [在IPAddress类构造函数中] 成功创建IPv4地址[127.0.0.1: 0]
+调试日志: [在函数Reactor::GetReactor中] 创建新Reactor对象调试日志: [在Reactor类构造函数中] 线程[12490]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 4
+调试日志: [在Reactor类构造函数中] wakefd = 5
+调试日志: [在TcpConnection类构造函数(TcpClient版本)中] 成功创建TCP连接对象(但是尚未连接服务端)
+调试日志: [在函数TinyPbRpcChannel::TinyPbRpcChannel中] 调用服务: QueryService.query_age
+调试日志: [在函数read_hook中] read_hook开始
+调试日志: [在函数read_hook中] 当前协程为主协程, 主协程无法hook, 直接调用系统调用read
+调试日志: [在函数TinyPbRpcChannel::TinyPbRpcChannel中] 从RunTime获取MsgID出错, 直接生成新的MsgID = 51347752815805374554
+调试日志: [在函数TinyPbCodeC::encodePbData中] encode pk_len = 68
+调试日志: [在函数TinyPbCodeC::encodePbData中] msg_req_len= 20
+调试日志: [在函数TinyPbCodeC::encodePbData中] src service_full_name_len = 22
+调试日志: [在函数TinyPbCodeC::encodePbData中] err_code= 0
+调试日志: [在函数TinyPbCodeC::encodePbData中] err_info_len= 0
+调试日志: [在函数TinyPbCodeC::encodePbData中] pb_data_len= 0
+调试日志: [在函数TinyPbCodeC::encode中] encode package len = 68
+调试日志: [在函数TinyPbCodeC::encode中] succ encode and write to buffer, writeindex=68
+============================================================
+信息日志: [在函数TinyPbRpcChannel::TinyPbRpcChannel中] MsgID[51347752815805374554] | 127.0.0.1: 39999 |. 客户端发送如下数据: 
+============================================================
+调试日志: [在TimerEvent构造函数中] 定时事件将于1687355993237执行
+调试日志: [Timer构造函数] 创建了一个定时器文件描述符, m_fd = 7
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[7]
+调试日志: [在函数Timer::addTimerEvent中] 需要reset定时器
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687355993237
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数TcpClient::sendAndRecvTinyPb中] 已添加RPC定时器事件, 定时器将在1687355993237到时
+调试日志: [在函数TcpClient::sendAndRecvTinyPb中] 开始连接
+调试日志: [在函数connect_hook中] connect_hook开始
+调试日志: [在函数connect_hook中] 无法hook, 直接调用g_sys_connect_fun
+调试日志: [在函数TcpClient::sendAndRecvTinyPb中] 成功连接服务器[127.0.0.1: 39999]!
+调试日志: [在函数write_hook中] write_hook开始
+调试日志: [在函数write_hook中] 无法hook, 直接调用系统调用write
+调试日志: [在函数TcpConnection::output中] 成功写入68字节字符
+调试日志: [在函数TcpConnection::output中] m_write_buffer被更新: m_write_index = 0, m_read_index = 0readAble() = 0
+信息日志: [在函数TcpConnection::output中] 向 fd[3]写入了68字节数据, 发送给[127.0.0.1: 39999]
+已将所有数据发送, 注销当前写事件, 中断write循环
+调试日志: [在函数TcpConnection::getResPackageData中] 51347752815805374554|应答数据不存在
+调试日志: [在函数TcpClient::sendAndRecvTinyPb中] 重新执行getResPackageData函数
+调试日志: [在函数TcpConnection::input中] 本函数开始
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 0
+调试日志: [在函数read_hook中] read_hook开始
+调试日志: [在函数read_hook中] 当前协程为主协程, 主协程无法hook, 直接调用系统调用read
+调试日志: [在函数TcpConnection::input中] 成功执行read_hook, 从内核缓冲区读入数据, 存储在m_read_buffer当中
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 77
+调试日志: [在函数TcpConnection::input中] read_count < rt, read_hook从内核缓冲区读到的字符把m_read_buffer全都填满了, 说明核缓冲区的字符都读完了, 因此中断循环read操作
+信息日志: [在函数TcpConnection::input中] 从对端[127.0.0.1: 39999]接收到[77]字节数据, 当前连接的fd = 3
+调试日志: [在函数TcpConnection::input中] 本函数结束
+调试日志: [在函数TcpConnection::execute中] 本函数开始
+调试日志: [在函数TinyPbCodeC::decode中] 本函数开始
+调试日志: [在函数TinyPbCodeC::decode中] prase pk_len =77
+调试日志: [在函数TinyPbCodeC::decode中] j =76, i=0
+调试日志: [在函数TinyPbCodeC::decode中] m_read_buffer size=128rd=0wd=0
+调试日志: [在函数TinyPbCodeC::decode中] msg_req_len= 20
+调试日志: [在函数TinyPbCodeC::decode中] msg_req_len_index= 9
+调试日志: [在函数TinyPbCodeC::decode中] msg_req= 51347752815805374554
+调试日志: [在函数TinyPbCodeC::decode中] service_name_len_index = 29
+调试日志: [在函数TinyPbCodeC::decode中] service_name_len = 22
+调试日志: [在函数TinyPbCodeC::decode中] service_name = QueryService.query_age
+调试日志: [在函数TinyPbCodeC::decode中] err_info_len = 0
+调试日志: [在函数TinyPbCodeC::decode中] pb_data_len= 9, pb_index = 63
+调试日志: [在函数TinyPbCodeC::decode中] 本函数结束
+调试日志: [在函数TcpConnection::execute中] 成功解码fd[3]收到的请求报文
+调试日志: [在函数TcpConnection::execute中] 本函数结束
+调试日志: [在函数TcpConnection::getResPackageData中] 返回一条resdata
+调试日志: [在函数Timer::delTimerEvent中] 已找到要删除的事件, 现在将其删除. src arrive time = 1687355993237
+调试日志: [在函数Timer::delTimerEvent中] 成功删除定时器事件, 原定时时间 = 1687355993237
+============================================================
+信息日志: [在函数TinyPbRpcChannel::TinyPbRpcChannel中] MsgID[51347752815805374554] | 成功调用RPC服务[QueryService.query_age]. 获取得到服务器的应答数据: res_info: "OK" age: 100100111
+============================================================
+调试日志: [在函数Reactor::delEventInLoopThread中] fd[3]本来就不在当前loop中
+调试日志: [在TcpClinet类析构函数中] 文件描述符 3被关闭
+调试日志: TcpConnection析构函数执行, fd = 3
+成功调用RPC服务, 从RPC服务器[127.0.0.1: 39999]获取应答对象: res_info: "OK" age: 100100111

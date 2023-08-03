@@ -1,0 +1,66 @@
+调试日志: [在函数readLogConfig中] 本函数尚未实现, 程序退出
+调试日志: 成功创建IPv4地址[127.0.0.1: 39999]
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[16891]成功创建了一个reactor对象
+调试日志: m_epfd = 3调试日志: wakefd = 4
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[16892]成功创建了一个reactor对象
+调试日志: m_epfd = 5调试日志: wakefd = 6
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[16893]成功创建了一个reactor对象
+调试日志: m_epfd = 7调试日志: wakefd = 8
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[16894]成功创建了一个reactor对象
+调试日志: m_epfd = 9调试日志: wakefd = 10
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 创建新Reactor对象调试日志: 线程[16890]成功创建了一个reactor对象
+调试日志: m_epfd = 11调试日志: wakefd = 12
+调试日志: 定时事件将于1687069848755执行
+调试日志: [Timer构造函数] 创建了一个定时器文件描述符, m_fd = 13
+调试日志: 成功通过epoll_ctl函数添加了fd[13]
+调试日志: [在函数Timer::addTimerEvent中] 需要reset定时器
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687069848755
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: 定时事件将于1687069848755执行
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+信息日志: TcpServer启动了, 地址: 127.0.0.1: 39999]
+调试日志: [在函数readLogConfig中] 本函数尚未实现, 程序退出
+调试日志: 成功创建IPv4地址[127.0.0.1: 39999]
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[17275]成功创建了一个reactor对象
+调试日志: m_epfd = 3调试日志: wakefd = 4
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[17276]成功创建了一个reactor对象
+调试日志: m_epfd = 5调试日志: wakefd = 6
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[17277]成功创建了一个reactor对象
+调试日志: m_epfd = 7调试日志: wakefd = 8
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 信号量快开始执行wait函数, 直到新线程将IOThread::main()执行完毕, 完成初始化操作
+调试日志: 线程[17278]成功创建了一个reactor对象
+调试日志: m_epfd = 9调试日志: wakefd = 10
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: 创建新Reactor对象调试日志: 线程[17274]成功创建了一个reactor对象
+调试日志: m_epfd = 11调试日志: wakefd = 12
+调试日志: 定时事件将于1687070640174执行
+调试日志: [Timer构造函数] 创建了一个定时器文件描述符, m_fd = 13
+调试日志: 成功通过epoll_ctl函数添加了fd[13]
+调试日志: [在函数Timer::addTimerEvent中] 需要reset定时器
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687070640174
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: 定时事件将于1687070640174执行
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+信息日志: TcpServer启动了, 地址: 127.0.0.1: 39999]

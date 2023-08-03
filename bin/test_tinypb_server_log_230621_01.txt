@@ -1,0 +1,489 @@
+peng@peng-virtual-machine:~/TinyRPCProject/myTinyrpc/bin$ ./test_tinypb_server ../conf/test_tinypb_server2.xml
+信息日志: [在文件test_tinypb_server.cc中][在函数main中] 开始尝试启动RPC服务器
+调试日志: [在函数InitConfig中] 函数InitConfig开始
+调试日志: [在函数Config::readConf中] readLogConfig函数尚未实现, 这里就不执行了
+调试日志: [在IPAddress类构造函数中] 成功创建IPv4地址[127.0.0.1: 39999]
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12268]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 3
+调试日志: [在Reactor类构造函数中] wakefd = 4
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12269]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 5
+调试日志: [在Reactor类构造函数中] wakefd = 6
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12270]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 7
+调试日志: [在Reactor类构造函数中] wakefd = 8
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12271]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 9
+调试日志: [在Reactor类构造函数中] wakefd = 10
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在函数Reactor::GetReactor中] 创建新Reactor对象调试日志: [在Reactor类构造函数中] 线程[12267]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 11
+调试日志: [在Reactor类构造函数中] wakefd = 12
+调试日志: [在TimerEvent构造函数中] 定时事件将于1687355844974执行
+调试日志: [Timer构造函数] 创建了一个定时器文件描述符, m_fd = 13
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[13]
+调试日志: [在函数Timer::addTimerEvent中] 需要reset定时器
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687355844974
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在TimerEvent构造函数中] 定时事件将于1687355844974执行
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+信息日志: [在TcpServer类的构造函数中] TcpServer启动了, 地址: 127.0.0.1: 39999]
+信息日志: [在函数Config::readConf中] read config from file [../conf/test_tinypb_server2.xml]: [log_path: ], [log_prefix: ], [log_max_size: 0 MB], [coroutine_stack_size: 256 KB], [coroutine_pool_size: 1000], [msg_req_len: 20], [max_connect_timeout: 75 s], [iothread_num:4], [timewheel_bucket_num: 6], [timewheel_inteval: 10 s], [server_ip: 127.0.0.1], [server_Port: 39999], [server_protocal: TINYPB]
+
+调试日志: [在函数InitConfig中] 函数InitConfig结束
+信息日志: [在文件test_tinypb_server.cc中][在函数main中] 配置RPC服务器的参数
+信息日志: [在函数TinyPbRpcDispatcher::registerService中] 成功将QueryService服务注册!
+信息日志: [在文件test_tinypb_server.cc中][在函数main中] 注册QueryServiceImpl服务
+调试日志: [在函数TcpAcceptor::init中] 成功创建监听文件描述符, listenfd = 14
+调试日志: [在函数TcpAcceptor::init中] 成功设置端口复用
+信息日志: succ mmap 262144000 bytes memory信息日志: [在函数TcpServer::start中] 从主协程切换到「接受协程(m_accept_cor)」
+调试日志: [在函数read_hook中] accept_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] 成功将fd设为非阻塞
+fd:[14], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[14]
+调试日志: [在函数read_hook中] accept_hook所在协程被挂起
+调试日志: [在函数IOThread::main中] IO线程 12269开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数IOThread::main中] IO线程 12270开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数IOThread::main中] IO线程 12271开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数IOThread::main中] IO线程 12268开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数FdEvent::delListenEvents中] 成功删除
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[14]
+调试日志: [在函数accept_hook中] accept_hook所在协程恢复, 现在调用g_sys_accept_fun
+调试日志: [在IPAddress类构造函数中] ip[127.0.0.1], port[48416]
+信息日志: [在函数TcpAcceptor::toAccept中] 成功接受新的客户端! fd = [15], addr: 127.0.0.1: 48416]
+调试日志: [在函数TcpServer::addClient中] 文件描述符 15 不存在, 创建其对应的TcpConnection对象并返回
+调试日志: [在TcpConnection构造函数中] TcpConnection构造函数开始
+调试日志: [在TcpConnection构造函数中] TcpConnection构造函数结束. 成功创建了一个TcpConenction实例
+调试日志: [在TcpConnection::initServer构造函数中] 本函数开始
+调试日志: [在TcpConnection::initServer构造函数中] 本函数结束
+调试日志: [在函数TcpServer::MainAcceptCorFunc中] 将一个m_loop_cor提交给I/O线程
+调试日志: [在函数TcpServer::MainAcceptCorFunc中] 当前TCP连接数为[1]
+调试日志: TcpConnection析构函数执行, fd = 15
+调试日志: [在函数read_hook中] accept_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] fd早已被设为非阻塞, 当前函数退出
+fd:[14], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[14]
+调试日志: [在函数read_hook中] accept_hook所在协程被挂起
+调试日志: [在函数Reactor::loop中] 开始执行m_pending_tasks中的任务[0]
+调试日志: [在函数TcpTimeWheel::fresh中] 更新Tcp连接对象的位置
+调试日志: [在函数Reactor::loop中] m_pending_tasks中的任务[0]执行完毕
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+错误日志: [在函数Reactor::loop中] epoll wakeup, fd = 12
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+错误日志: [在函数Reactor::loop中] epoll wakeup, fd = 4
+调试日志: [在函数Reactor::loop中] 开始执行m_pending_tasks中的任务[0]
+调试日志: [在函数TcpConnection::input中] 本函数开始
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 0
+调试日志: [在函数read_hook中] read_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] 成功将fd设为非阻塞
+fd:[15], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程被挂起
+调试日志: [在函数Reactor::loop中] m_pending_tasks中的任务[0]执行完毕
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数FdEvent::delListenEvents中] 成功删除
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程恢复, 现在调用g_sys_read_fun
+调试日志: [在函数TcpConnection::input中] 成功执行read_hook, 从内核缓冲区读入数据, 存储在m_read_buffer当中
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 68
+调试日志: [在函数TcpConnection::input中] read_count < rt, read_hook从内核缓冲区读到的字符把m_read_buffer全都填满了, 说明核缓冲区的字符都读完了, 因此中断循环read操作
+信息日志: [在函数TcpConnection::input中] 从对端[127.0.0.1: 48416]接收到[68]字节数据, 当前连接的fd = 15
+调试日志: [在函数TcpConnection::input中] 本函数结束
+调试日志: [在函数TcpConnection::execute中] 本函数开始
+调试日志: [在函数TinyPbCodeC::decode中] 本函数开始
+调试日志: [在函数TinyPbCodeC::decode中] prase pk_len =68
+调试日志: [在函数TinyPbCodeC::decode中] j =67, i=0
+调试日志: [在函数TinyPbCodeC::decode中] m_read_buffer size=128rd=0wd=0
+调试日志: [在函数TinyPbCodeC::decode中] msg_req_len= 20
+调试日志: [在函数TinyPbCodeC::decode中] msg_req_len_index= 9
+调试日志: [在函数TinyPbCodeC::decode中] msg_req= 90040877953010068826
+调试日志: [在函数TinyPbCodeC::decode中] service_name_len_index = 29
+调试日志: [在函数TinyPbCodeC::decode中] service_name_len = 22
+调试日志: [在函数TinyPbCodeC::decode中] service_name = QueryService.query_age
+调试日志: [在函数TinyPbCodeC::decode中] err_info_len = 0
+调试日志: [在函数TinyPbCodeC::decode中] pb_data_len= 0, pb_index = 63
+调试日志: [在函数TinyPbCodeC::decode中] 本函数结束
+调试日志: [在函数TcpConnection::execute中] 成功解码fd[15]收到的请求报文
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] 开始分发客户端发来的tinypb请求包, msgno = 90040877953010068826
+调试日志: [在函数TinyPbRpcDispatcher::parseServiceFullName中] service_name = QueryService
+调试日志: [在函数TinyPbRpcDispatcher::parseServiceFullName中] method_name = query_age
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[90040877953010068826] | request.name = queryAgeReq
+============================================================
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[90040877953010068826] | 获取到客户端的请求数据: 
+============================================================
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[90040877953010068826] | response.name = queryAgeRes
+AppInfoLog: [在函数QueryServiceImpl::query_age中] 输入参数request = {}
+AppInfoLog: [在函数QueryServiceImpl::query_age中] 输出参数response = {res_info: "OK" age: 100100111}
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] 成功调用[QueryService.query_age], 接下来向客户端发送回包
+============================================================
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[90040877953010068826] | 服务端设置应答数据: res_info: "OK" age: 100100111
+============================================================
+调试日志: [在函数TinyPbCodeC::encodePbData中] encode pk_len = 77
+调试日志: [在函数TinyPbCodeC::encodePbData中] msg_req_len= 20
+调试日志: [在函数TinyPbCodeC::encodePbData中] src service_full_name_len = 22
+调试日志: [在函数TinyPbCodeC::encodePbData中] err_code= 0
+调试日志: [在函数TinyPbCodeC::encodePbData中] err_info_len= 0
+调试日志: [在函数TinyPbCodeC::encodePbData中] pb_data_len= 9
+调试日志: [在函数TinyPbCodeC::encode中] encode package len = 77
+调试日志: [在函数TinyPbCodeC::encode中] succ encode and write to buffer, writeindex=77
+调试日志: [在函数TcpConnection::execute中] 本函数结束
+调试日志: [在函数write_hook中] write_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] fd早已被设为非阻塞, 当前函数退出
+调试日志: [在函数TcpConnection::output中] 成功写入77字节字符
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+错误日志: [在函数Reactor::loop中] epoll wakeup, fd = 12
+调试日志: [在函数Reactor::loop中] 开始执行m_pending_tasks中的任务[0]
+调试日志: [在函数TcpTimeWheel::fresh中] 更新Tcp连接对象的位置
+调试日志: [在函数Reactor::loop中] m_pending_tasks中的任务[0]执行完毕
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数TcpConnection::output中] m_write_buffer被更新: m_write_index = 0, m_read_index = 0readAble() = 0
+信息日志: [在函数TcpConnection::output中] 向 fd[15]写入了77字节数据, 发送给[127.0.0.1: 48416]
+已将所有数据发送, 注销当前写事件, 中断write循环
+调试日志: [在函数TcpConnection::input中] 本函数开始
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 0
+调试日志: [在函数read_hook中] read_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] fd早已被设为非阻塞, 当前函数退出
+fd:[15], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程被挂起
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数FdEvent::delListenEvents中] 成功删除
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程恢复, 现在调用g_sys_read_fun
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 0
+调试日志: [在函数TcpConnection::input中] read_hook函数返回值rt <= 0
+错误日志: [在函数TcpConnection::input中] read empty while occur read event, because of peer close, fd= 15, sys error = Resource temporarily unavailable, now to clear tcp connection
+调试日志: [在函数Reactor::delEventInLoopThread中] 已成功删除fd[15]
+调试日志: [在函数TcpConnection::input中] peer close, 当前协程中止, 等待主线程清理此TcpConnection
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687355854975
+调试日志: [在函数TcpTimeWheel::loopFunc中] pop src bucket
+调试日志: [在函数TcpTimeWheel::loopFunc中] push new bucket
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687355864976
+调试日志: [在函数TcpTimeWheel::loopFunc中] pop src bucket
+调试日志: [在函数TcpTimeWheel::loopFunc中] push new bucket
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+已杀死
+peng@peng-virtual-machine:~/TinyRPCProject/myTinyrpc/bin$ ./test_tinypb_server ../conf/test_tinypb_server2.xml
+信息日志: [在文件test_tinypb_server.cc中][在函数main中] 开始尝试启动RPC服务器
+调试日志: [在函数InitConfig中] 函数InitConfig开始
+调试日志: [在函数Config::readConf中] readLogConfig函数尚未实现, 这里就不执行了
+调试日志: [在IPAddress类构造函数中] 成功创建IPv4地址[127.0.0.1: 39999]
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12479]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 3
+调试日志: [在Reactor类构造函数中] wakefd = 4
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12480]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 5
+调试日志: [在Reactor类构造函数中] wakefd = 6
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12481]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 7
+调试日志: [在Reactor类构造函数中] wakefd = 8
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在IOThread构造函数中] 这是主线程, 信号量对m_init_semaphore执行sem_wait函数, 直到子线程m_thread回到函数IOThread::main()执行到对m_start_semaphore执行sem_wait函数, 完成初始化操作
+调试日志: [在Reactor类构造函数中] 线程[12482]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 9
+调试日志: [在Reactor类构造函数中] wakefd = 10
+调试日志: [在函数IOThread::main中] IOThread类的初始化工作完成, 现在令信号量执行post操作
+调试日志: [在IOThread构造函数中] 信号量执行wait函数完毕, 完成I/O线程的创建
+调试日志: [在函数Reactor::GetReactor中] 创建新Reactor对象调试日志: [在Reactor类构造函数中] 线程[12478]成功创建了一个reactor对象
+调试日志: [在Reactor类构造函数中] m_epfd = 11
+调试日志: [在Reactor类构造函数中] wakefd = 12
+调试日志: [在TimerEvent构造函数中] 定时事件将于1687355978351执行
+调试日志: [Timer构造函数] 创建了一个定时器文件描述符, m_fd = 13
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[13]
+调试日志: [在函数Timer::addTimerEvent中] 需要reset定时器
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687355978351
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在TimerEvent构造函数中] 定时事件将于1687355978351执行
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+信息日志: [在TcpServer类的构造函数中] TcpServer启动了, 地址: 127.0.0.1: 39999]
+信息日志: [在函数Config::readConf中] read config from file [../conf/test_tinypb_server2.xml]: [log_path: ], [log_prefix: ], [log_max_size: 0 MB], [coroutine_stack_size: 256 KB], [coroutine_pool_size: 1000], [msg_req_len: 20], [max_connect_timeout: 75 s], [iothread_num:4], [timewheel_bucket_num: 6], [timewheel_inteval: 10 s], [server_ip: 127.0.0.1], [server_Port: 39999], [server_protocal: TINYPB]
+
+调试日志: [在函数InitConfig中] 函数InitConfig结束
+信息日志: [在文件test_tinypb_server.cc中][在函数main中] 配置RPC服务器的参数
+信息日志: [在函数TinyPbRpcDispatcher::registerService中] 成功将QueryService服务注册!
+信息日志: [在文件test_tinypb_server.cc中][在函数main中] 注册QueryServiceImpl服务
+调试日志: [在函数TcpAcceptor::init中] 成功创建监听文件描述符, listenfd = 14
+调试日志: [在函数TcpAcceptor::init中] 成功设置端口复用
+信息日志: succ mmap 262144000 bytes memory信息日志: [在函数TcpServer::start中] 从主协程切换到「接受协程(m_accept_cor)」
+调试日志: [在函数read_hook中] accept_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] 成功将fd设为非阻塞
+fd:[14], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[14]
+调试日志: [在函数read_hook中] accept_hook所在协程被挂起
+调试日志: [在函数IOThread::main中] IO线程 12479开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数IOThread::main中] IO线程 12481开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数IOThread::main中] IO线程 12482开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数IOThread::main中] IO线程 12480开始loop
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687355988352
+调试日志: [在函数TcpTimeWheel::loopFunc中] pop src bucket
+调试日志: [在函数TcpTimeWheel::loopFunc中] push new bucket
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数FdEvent::delListenEvents中] 成功删除
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[14]
+调试日志: [在函数accept_hook中] accept_hook所在协程恢复, 现在调用g_sys_accept_fun
+调试日志: [在IPAddress类构造函数中] ip[127.0.0.1], port[47232]
+信息日志: [在函数TcpAcceptor::toAccept中] 成功接受新的客户端! fd = [15], addr: 127.0.0.1: 47232]
+调试日志: [在函数TcpServer::addClient中] 文件描述符 15 不存在, 创建其对应的TcpConnection对象并返回
+调试日志: [在TcpConnection构造函数中] TcpConnection构造函数开始
+调试日志: [在TcpConnection构造函数中] TcpConnection构造函数结束. 成功创建了一个TcpConenction实例
+调试日志: [在TcpConnection::initServer构造函数中] 本函数开始
+调试日志: [在TcpConnection::initServer构造函数中] 本函数结束
+调试日志: [在函数TcpServer::MainAcceptCorFunc中] 将一个m_loop_cor提交给I/O线程
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+错误日志: [在函数Reactor::loop中] epoll wakeup, fd = 4
+调试日志: [在函数Reactor::loop中] 开始执行m_pending_tasks中的任务[0]
+调试日志: [在函数TcpConnection::input中] 本函数开始
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 0
+调试日志: [在函数read_hook中] read_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] 成功将fd设为非阻塞
+fd:[15], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程被挂起
+调试日志: [在函数Reactor::loop中] m_pending_tasks中的任务[0]执行完毕
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数TcpServer::MainAcceptCorFunc中] 当前TCP连接数为[1]
+调试日志: TcpConnection析构函数执行, fd = 15
+调试日志: [在函数read_hook中] accept_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] fd早已被设为非阻塞, 当前函数退出
+fd:[14], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[14]
+调试日志: [在函数read_hook中] accept_hook所在协程被挂起
+调试日志: [在函数Reactor::loop中] 开始执行m_pending_tasks中的任务[0]
+调试日志: [在函数TcpTimeWheel::fresh中] 更新Tcp连接对象的位置
+调试日志: [在函数Reactor::loop中] m_pending_tasks中的任务[0]执行完毕
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+错误日志: [在函数Reactor::loop中] epoll wakeup, fd = 12
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数FdEvent::delListenEvents中] 成功删除
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程恢复, 现在调用g_sys_read_fun
+调试日志: [在函数TcpConnection::input中] 成功执行read_hook, 从内核缓冲区读入数据, 存储在m_read_buffer当中
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 68
+调试日志: [在函数TcpConnection::input中] read_count < rt, read_hook从内核缓冲区读到的字符把m_read_buffer全都填满了, 说明核缓冲区的字符都读完了, 因此中断循环read操作
+信息日志: [在函数TcpConnection::input中] 从对端[127.0.0.1: 47232]接收到[68]字节数据, 当前连接的fd = 15
+调试日志: [在函数TcpConnection::input中] 本函数结束
+调试日志: [在函数TcpConnection::execute中] 本函数开始
+调试日志: [在函数TinyPbCodeC::decode中] 本函数开始
+调试日志: [在函数TinyPbCodeC::decode中] prase pk_len =68
+调试日志: [在函数TinyPbCodeC::decode中] j =67, i=0
+调试日志: [在函数TinyPbCodeC::decode中] m_read_buffer size=128rd=0wd=0
+调试日志: [在函数TinyPbCodeC::decode中] msg_req_len= 20
+调试日志: [在函数TinyPbCodeC::decode中] msg_req_len_index= 9
+调试日志: [在函数TinyPbCodeC::decode中] msg_req= 51347752815805374554
+调试日志: [在函数TinyPbCodeC::decode中] service_name_len_index = 29
+调试日志: [在函数TinyPbCodeC::decode中] service_name_len = 22
+调试日志: [在函数TinyPbCodeC::decode中] service_name = QueryService.query_age
+调试日志: [在函数TinyPbCodeC::decode中] err_info_len = 0
+调试日志: [在函数TinyPbCodeC::decode中] pb_data_len= 0, pb_index = 63
+调试日志: [在函数TinyPbCodeC::decode中] 本函数结束
+调试日志: [在函数TcpConnection::execute中] 成功解码fd[15]收到的请求报文
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] 开始分发客户端发来的tinypb请求包, msgno = 51347752815805374554
+调试日志: [在函数TinyPbRpcDispatcher::parseServiceFullName中] service_name = QueryService
+调试日志: [在函数TinyPbRpcDispatcher::parseServiceFullName中] method_name = query_age
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[51347752815805374554] | request.name = queryAgeReq
+============================================================
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[51347752815805374554] | 获取到客户端的请求数据: 
+============================================================
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[51347752815805374554] | response.name = queryAgeRes
+AppInfoLog: [在函数QueryServiceImpl::query_age中] 输入参数request = {}
+AppInfoLog: [在函数QueryServiceImpl::query_age中] 输出参数response = {res_info: "OK" age: 100100111}
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] 成功调用[QueryService.query_age], 接下来向客户端发送回包
+============================================================
+信息日志: [在函数TinyPbRpcDispatcher::dispatch中] MsgId[51347752815805374554] | 服务端设置应答数据: res_info: "OK" age: 100100111
+============================================================
+调试日志: [在函数TinyPbCodeC::encodePbData中] encode pk_len = 77
+调试日志: [在函数TinyPbCodeC::encodePbData中] msg_req_len= 20
+调试日志: [在函数TinyPbCodeC::encodePbData中] src service_full_name_len = 22
+调试日志: [在函数TinyPbCodeC::encodePbData中] err_code= 0
+调试日志: [在函数TinyPbCodeC::encodePbData中] err_info_len= 0
+调试日志: [在函数TinyPbCodeC::encodePbData中] pb_data_len= 9
+调试日志: [在函数TinyPbCodeC::encode中] encode package len = 77
+调试日志: [在函数TinyPbCodeC::encode中] succ encode and write to buffer, writeindex=77
+调试日志: [在函数TcpConnection::execute中] 本函数结束
+调试日志: [在函数write_hook中] write_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] fd早已被设为非阻塞, 当前函数退出
+调试日志: [在函数TcpConnection::output中] 成功写入77字节字符
+调试日志: [在函数TcpConnection::output中] m_write_buffer被更新: m_write_index = 0, m_read_index = 0readAble() = 0
+信息日志: [在函数TcpConnection::output中] 向 fd[15]写入了77字节数据, 发送给[127.0.0.1: 47232]
+已将所有数据发送, 注销当前写事件, 中断write循环
+调试日志: [在函数TcpConnection::input中] 本函数开始
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 0
+调试日志: [在函数read_hook中] read_hook开始
+调试日志: [在函数FdEvent::setNonBlock中] fd早已被设为非阻塞, 当前函数退出
+fd:[15], 向epoll注册READ事件(即EPOLLIN事件)
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程被挂起
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+错误日志: [在函数Reactor::loop中] epoll wakeup, fd = 12
+调试日志: [在函数Reactor::loop中] 开始执行m_pending_tasks中的任务[0]
+调试日志: [在函数TcpTimeWheel::fresh中] 更新Tcp连接对象的位置
+调试日志: [在函数Reactor::loop中] m_pending_tasks中的任务[0]执行完毕
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数FdEvent::delListenEvents中] 成功删除
+调试日志: [在函数Reactor::addEventInLoopThread中] epoll_ctl成功添加fd[15]
+调试日志: [在函数read_hook中] read_hook所在协程恢复, 现在调用g_sys_read_fun
+调试日志: [在函数TcpConnection::input中] m_read_buffer: size = 128, rd(即readIndex) = 0, wd(即writeIndex) = 0
+调试日志: [在函数TcpConnection::input中] read_hook函数返回值rt <= 0
+错误日志: [在函数TcpConnection::input中] read empty while occur read event, because of peer close, fd= 15, sys error = Resource temporarily unavailable, now to clear tcp connection
+调试日志: [在函数Reactor::delEventInLoopThread中] 已成功删除fd[15]
+调试日志: [在函数TcpConnection::input中] peer close, 当前协程中止, 等待主线程清理此TcpConnection
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687355998352
+调试日志: [在函数TcpTimeWheel::loopFunc中] pop src bucket
+调试日志: [在函数TcpTimeWheel::loopFunc中] push new bucket
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 1
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 原执行时间: m_arrive_time
+调试日志: [在函数TimerEvent::resetTime中] 重置定时事件, 现执行时间: m_arrive_time
+调试日志: [在函数Timer::addTimerEvent中] 成功添加定时器事件
+调试日志: [在函数Timer::resetArriveTime中] 成功reset定时器, 下次到期时间为 = 1687356008352
+调试日志: [在函数TcpTimeWheel::loopFunc中] pop src bucket
+调试日志: [在函数TcpTimeWheel::loopFunc中] push new bucket
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行完毕, 返回
+调试日志: [在函数Reactor::loop中] epoll_wait函数执行返回值rt = 0
+调试日志: [在函数Reactor::loop中] 开始执行epoll_wait函数
+已杀死
